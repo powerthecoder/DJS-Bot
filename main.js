@@ -16,3 +16,15 @@ client.once('ready', () => {
     console.log("------------------");
 });
 
+client.on('message', msg =>{
+    if (!msg.content.startsWith(config.Prefix) || msg.author.bot) return;
+
+    const args = msg.content.slice(config.Prefix.length).trim().split(/ +/);
+    const command = args.shift().toLowerCase();
+
+    if (command === 'ping') {
+        client.commands.get('ping').execute(msg, args);
+    }
+});
+
+client.login(config.Token);
