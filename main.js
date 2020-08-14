@@ -25,6 +25,9 @@ client.on('message', msg =>{
     if (command === 'ping') {
         client.commands.get('ping').execute(msg, args);
     }
+    else if (command === 'markisgod'){
+        client.command.get('mark').execute(msg, args);
+    }
 });
 
 client.login(config.Token);
