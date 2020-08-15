@@ -1,6 +1,6 @@
 module.exports = {
     name: '',
-    descriptiuon: '',
+    description: '',
     execute(msg, args) {
         //Code Here
     },
