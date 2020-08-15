@@ -1,6 +1,6 @@
 module.exports = {
-    name: '',
-    descriptiuon: '',
+    name: 'help',
+    description: 'Help Menu',
     execute(msg, args) {
         msg.channel.send({embed: {
             title: "Help Menu",
