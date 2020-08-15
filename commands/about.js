@@ -1,6 +1,6 @@
 module.exports = {
     name: 'about',
-    descriptiuon: 'About Bot Author',
+    description: 'About Bot Author',
     execute(msg, args) {
         msg.channel.send({embed: {
             title: "About",
