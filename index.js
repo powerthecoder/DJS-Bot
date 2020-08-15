@@ -28,6 +28,9 @@ client.on('message', msg =>{
     else if (command === 'markisgod'){
         client.commands.get('mark').execute(msg, args);
     }
+    else if (command === 'about'){
+        client.commands.get('about').execute(msg, args);
+    }
 });
 
 client.login(config.Token);
