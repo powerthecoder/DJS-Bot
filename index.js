@@ -31,6 +31,9 @@ client.on('message', msg =>{
     else if (command === 'about'){
         client.commands.get('about').execute(msg, args);
     }
+    else if (command === 'help'){
+        client.commands.get('help').execute(msg, args);
+    }
 });
 
 client.login(config.Token);
